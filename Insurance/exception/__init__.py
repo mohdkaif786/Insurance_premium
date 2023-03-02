@@ -1,11 +1,11 @@
 import os
 import sys
 
-class InsuranceExceotion(Exception):
+class InsuranceException(Exception):
 
     def __init__(self, error_message: Exception, error_detail:sys):
         super().__init__(error_message)
-        self.error_message = InsuranceExceotion.error_message_detail(error_message, error_detail= error_detail)
+        self.error_message = InsuranceException.error_message_detail(error_message, error_detail= error_detail)
 
     @staticmethod
     def error_message_detail(error_message: Exception, error_detail:sys)->str:
@@ -22,4 +22,4 @@ class InsuranceExceotion(Exception):
         return error_message
     
     def __str__(self):
-        return InsuranceExceotion.__name__.__str__()
+        return InsuranceException.__name__.__str__()

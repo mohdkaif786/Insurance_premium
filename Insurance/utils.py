@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 import sys
-from Insurance.exception import InsuranceExceotion
+from Insurance.exception import InsuranceException
 from Insurance.config import mongo_client
 from Insurance.logger import logging
 
@@ -20,4 +20,4 @@ def get_collection_as_dataframe(database_name:str, collection_name:str) -> pd.Da
 
 
     except Exception as e:
-        raise InsuranceExceotion(e,sys)
+        raise InsuranceException(e,sys)
