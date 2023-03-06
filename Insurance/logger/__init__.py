@@ -4,9 +4,9 @@ import os
 
 LOG_DIR = "Insurance_log"
 
-CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d-%H-%m-%S')}"
+CURRENT_TIME_STAMP = f"{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}"
 
-LOG_FILE_PATH = f'log_{CURRENT_TIME_STAMP}.log'
+LOG_FILE_PATH = f"log_{CURRENT_TIME_STAMP}.log"
 
 os.makedirs(LOG_DIR, exist_ok = True)
 
